@@ -9,69 +9,73 @@
 </head>
 <body>
 
-<!-- ================= BANNER ================= -->
+<!-- BANNER -->
 <section class="banner">
   <img src="banner2.png" alt="AZ Empire Shop Banner">
 </section>
 
-<!-- ================= APPS ================= -->
+<!-- APPS -->
 <section class="container">
 
   <!-- KING TV -->
   <div class="app-card">
-    <img src="logo1.png" alt="King TV">
+    <img src="logo1.png">
     <h2>King TV</h2>
     <p>Live TV, Movies & Sports</p>
 
     <a href="https://cutt.ly/king200" class="btn" target="_blank">⬇ Download App</a>
     <button class="btn" onclick="openPackage('KINGTV')">📦 View Packages</button>
+
     <a href="https://t.me/+gabhQO4OjT1lMDY1" class="btn outline" target="_blank">
-      📞 Support Group
+      📞 King TV Support Group
     </a>
   </div>
 
   <!-- PANDAFLIX -->
   <div class="app-card">
-    <img src="logo2.png" alt="PandaFlix">
+    <img src="logo2.png">
     <h2>PandaFlix</h2>
-    <p>OTT Premium IPTV</p>
+    <p>OTT PREMIUM IPTV</p>
 
     <a href="https://link2u.cc/tvtech" class="btn" target="_blank">⬇ Download App</a>
     <button class="btn" onclick="openPackage('PANDAFLIX')">📦 View Packages</button>
+
     <a href="https://chat.whatsapp.com/CKBFhfqOBmq82v73gr4A6F" class="btn outline" target="_blank">
-      📞 Support Group
+      📞 PandaFlix Support Group
     </a>
   </div>
 
   <!-- MYIPTV4K -->
   <div class="app-card">
-    <img src="logo3.png" alt="MYIPTV4K">
+    <img src="logo3.png">
     <h2>MYIPTV4K</h2>
     <p>Live TV, Movies & Sports</p>
 
     <a href="https://bit.ly/myiptv_21" class="btn" target="_blank">⬇ Download App</a>
     <button class="btn" onclick="openPackage('MYIPTV4K')">📦 View Packages</button>
+
     <a href="https://t.me/+w4xaeKJIzMgxNGFl" class="btn outline" target="_blank">
-      📞 Support Group
+      📞 MYIPTV4K Support Group
     </a>
   </div>
 
   <!-- TVTECH PRO -->
   <div class="app-card">
-    <img src="logo4.png" alt="TVTech Pro">
+    <img src="logo4.png">
     <h2>TVTech Pro</h2>
-    <p>OTT IPTV Premium</p>
+    <p>OTT IPTV PREMIUM</p>
 
     <a href="https://link2u.cc/tvtech" class="btn" target="_blank">⬇ Download App</a>
     <button class="btn" onclick="openPackage('TVTECHPRO')">📦 View Packages</button>
+
     <a href="https://chat.whatsapp.com/Js2pnIdeAMzIETdRlnE6BR" class="btn outline" target="_blank">
-      📞 Support Group
+      📞 TVTech Pro Support Group
     </a>
   </div>
 
 </section>
 
-<!-- ================= PAYMENT ================= -->
+<!-- PAYMENT -->
 <section class="payment">
   <h2>💳 Payment Method</h2>
   <a href="https://wa.me/60129876368" class="btn" target="_blank">
@@ -80,35 +84,29 @@
   <button class="btn" onclick="openQR()">📱 QR Pay</button>
 </section>
 
-<!-- ================= RESELLER ================= -->
+<!-- RESELLER -->
 <section class="reseller">
   <h2>🤝 Become a Reseller</h2>
-  <p>Earn monthly income selling IPTV</p>
-  <a href="https://wa.me/60129876368" class="btn" target="_blank">
-    💼 WhatsApp to Become Reseller
+  <p>Earn income by selling IPTV With AZ Empire Shop</p>
+
+  <a href="https://wa.me/60129876368?text=Hi%20I%20want%20to%20be%20a%20reseller"
+     class="btn"
+     target="_blank">
+    💼 Become a Reseller (WhatsApp)
   </a>
 </section>
 
-<!-- ================= OPERATION HOURS ================= -->
+<!-- OPERATION HOURS -->
 <section class="hours">
   <h2>🕘 Operation Hours</h2>
-  <p>Daily • 9:00 AM – 11:00 PM</p>
+  <p>Daily • 09:00 AM – 11:00 PM</p>
 </section>
 
-<!-- ================= FOOTER ================= -->
 <footer>
   © 2026 AZ Empire Shop — All Rights Reserved
 </footer>
 
-<!-- ================= FLOATING WHATSAPP ================= -->
-<a href="https://wa.me/60129876368"
-   class="floating-whatsapp"
-   target="_blank"
-   aria-label="WhatsApp Help">
-   💬
-</a>
-
-<!-- ================= PACKAGE MODAL ================= -->
+<!-- PACKAGE MODAL -->
 <div class="modal" id="packageModal">
   <div class="modal-box">
     <h2 id="appTitle"></h2>
@@ -117,16 +115,15 @@
   </div>
 </div>
 
-<!-- ================= QR MODAL ================= -->
+<!-- QR MODAL -->
 <div class="modal" id="qrModal">
   <div class="modal-box">
     <h2>📲 Scan QR to Pay</h2>
-    <img src="qr.png" class="qr-img">
+    <img src="QRpay.jpg" class="qr-img">
     <button class="btn outline" onclick="closeQR()">Done</button>
   </div>
 </div>
 
-<!-- ================= SCRIPT ================= -->
 <script>
 const prices = {
   KINGTV: [
@@ -134,7 +131,7 @@ const prices = {
     { name: "3 Months", price: "RM38" },
     { name: "6 Months", price: "RM70" },
     { name: "1 Year", price: "RM110" },
-    { name: "4 Year", price: "RM300" }
+    { name: "4 Years", price: "RM300" }
   ],
   PANDAFLIX: [
     { name: "1 Month", price: "RM10" },
@@ -148,12 +145,12 @@ const prices = {
     { name: "1 Year", price: "RM270" }
   ],
   TVTECHPRO: [
-    { name: "1 Device 3 Months", price: "RM35" },
-    { name: "1 Device 6 Months", price: "RM60" },
-    { name: "1 Device 1 Year", price: "RM110" },
-    { name: "2 Device 3 Months", price: "RM55" },
-    { name: "2 Device 6 Months", price: "RM105" },
-    { name: "2 Device 1 Year", price: "RM200" }
+    { name: "1 Device • 3 Months", price: "RM35" },
+    { name: "1 Device • 6 Months", price: "RM60" },
+    { name: "1 Device • 1 Year", price: "RM110" },
+    { name: "2 Devices • 3 Months", price: "RM55" },
+    { name: "2 Devices • 6 Months", price: "RM105" },
+    { name: "2 Devices • 1 Year", price: "RM200" }
   ]
 };
 
@@ -184,4 +181,5 @@ function closeQR() {
 
 </body>
 </html>
+
 
